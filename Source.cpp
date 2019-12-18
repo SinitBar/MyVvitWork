@@ -75,13 +75,13 @@ int main()
 {
 	SetConsoleCP(1251); //разрешить русский текст в потоке ввода
 	SetConsoleOutputCP(1251); //разрешить русский текст в потоке вывода
-	int time = 10; // время в миллисекундах - влияет на скорость движения линии
+	int time = 5; // время в миллисекундах - влияет на скорость движения линии
 	Vector2u size = window.getSize(); // получение вектора размера текущего окна (x, y)
 	unsigned int width = size.x, height = size.y; // ширина и высота окна соответственно
 	window.clear(); // очистка окна
 	// начинается рисование линий
-	line[0].color = Color::White; // цвет начала линии
-	line[1].color = Color::Blue; // цвет конца линии
+	line[0].color = Color::Green; // цвет начала линии
+	line[1].color = Color::Yellow; // цвет конца линии
 	line[0].position = Vector2f(width / 2, height / 2); // позиция начала линии: X, Y (центр)
 	//xi, yi - вспомогательные координаты по x и по y - для обозначений начала и конца текущей линии
 	EndOnTheUpLine(time, width, height, line, window);
