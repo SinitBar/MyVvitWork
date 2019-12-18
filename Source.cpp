@@ -86,8 +86,6 @@ int main()
 	//xi, yi - вспомогательные координаты по x и по y - для обозначений начала и конца текущей линии
 	EndOnTheUpLine(time, width, height, line, window);
 	EndOnTheRightLine(time, width, height, line, window);
-	EndOnTheDownLine(time, width, height, line, window);
-	EndOnTheLeftLine(time, width, height, line, window);
 	window.close();
 	return 0;
 }
